@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 20px 0;
+  gap: 24px
+}
+
+.item {
+  color: var(--theme-inactive-color);
+  padding-bottom: 6px;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}

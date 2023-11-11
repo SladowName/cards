@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__add {
+    background-color: #ea4e34;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #e4361a;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.avatar_container {
+  display: flex;
+  margin-left: 24px;
+}
+
+.add_button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: #d8d8d8;
+  margin-left: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+}

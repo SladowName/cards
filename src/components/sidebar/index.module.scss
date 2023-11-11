@@ -1,0 +1,39 @@
+.sidebar {
+  flex-basis: 284px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-shrink: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 50px;
+}
+
+.divider {
+  margin-top: 64px;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.item_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  gap: 24px;
+}
+
+.item {
+  color: var(--theme-inactive-color);
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--theme-color);
+  }
+}
+
+.active {
+  color: var(--theme-color);
+}

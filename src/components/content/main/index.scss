@@ -1,0 +1,51 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (max-width: 480px) {
+    gap: 10px;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 100%;
+  contain: layout;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  width: auto;
+  aspect-ratio: 1/1;
+
+  @media (max-width: 480px) {
+    aspect-ratio: 1/1.4;
+  }
+}
+
+.card.active {
+  grid-column: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  grid-row-end: 6;
+  z-index: 999;
+  aspect-ratio: 1/1;
+
+  @media (max-width: 480px) {
+    grid-column-end: 4;
+    aspect-ratio: 2/1;
+  }
+}
+
+.content.expanded .card:not(.active) {
+  opacity: 0.4;
+  aspect-ratio: 3/1;
+  grid-column-start: 3;
+  pointer-events: none;
+
+  @media (max-width: 480px) {
+    aspect-ratio: 1;
+    grid-column-start: auto;
+  }
+}

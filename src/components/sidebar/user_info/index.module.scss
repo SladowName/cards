@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  &_text {
+    margin-top: 20px;
+  }
+}
+
+.name {
+
+}
+
+.email {
+  color: var(--theme-inactive-color);
+  font-size: 14px;
+}
